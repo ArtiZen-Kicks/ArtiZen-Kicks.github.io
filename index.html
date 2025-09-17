@@ -12,7 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body { 
+      font-family: 'Inter', sans-serif;
+      background: url('BodyBackgroundImage.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
     .gallery-img { 
       transition: transform 0.3s, box-shadow 0.3s; 
       border-radius: 12px; 
@@ -61,10 +65,47 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-5px); }
     }
+
+    /* WhatsApp Button CSS */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-button i {
+      font-size: 30px;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+      70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
   </style>
 </head>
 
-<body class="text-gray-900 bg-gray-50">
+<body class="text-gray-900">
 
   <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -150,15 +191,12 @@
     <section id="contact" class="text-center">
       <h2 class="text-3xl font-bold mb-8">Connect With Us</h2>
       <p class="mb-6">This isn’t just a store. It’s a movement. Join the ArtiZen tribe and walk with culture, confidence & community.</p>
-
-      <!-- Cult following CTA -->
       <p class="italic mb-4">“We’re not selling shoes. We’re building legacy.” – Gary Vee x ArtiZen Kicks</p>
 
       <!-- Form -->
       <form action="https://formsubmit.co/nomzanmazi@gmail.com" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md space-y-4">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://nomzanmazi.github.io/artyzen-kicks/thanks.html">
-
+        <input type="hidden" name="_next" value="thanks.html">
         <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded">
         <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded">
         <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-3 border rounded"></textarea>
@@ -166,5 +204,19 @@
       </form>
     </section>
   </main>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27680320894" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer class="bg-white py-8 shadow-inner">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex justify-center mb-4">
+        <img src="Logo2.png" alt="ArtiZen Kicks Logo" class="h-16 w-auto">
+      </div>
+      <p class="text-gray-600">© 2025 ArtiZen Kicks. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
