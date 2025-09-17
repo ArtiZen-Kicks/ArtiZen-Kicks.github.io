@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  Gary V
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ArtiZen Kicks | Kid’s Shoes, Custom Sneakers & Premium Care</title>
-  <meta name="description" content="ArtiZen Kicks brings you kid’s shoes, custom sneakers, and premium shoe care services in South Africa. Step into confidence with unique style tailored for you.">
+  <title>ArtiZen Kicks | Sneakers, Kids' Shoes & Premium Shoe Care</title>
+  <meta name="description" content="ArtiZen Kicks brings you sneakers, kids' shoes, and premium shoe care services in South Africa. Legacy over currency, culture over hype.">
+  <meta name="keywords" content="sneakers South Africa, kids shoes SA, sneaker culture, custom sneakers, ArtiZen Kicks, premium shoe care">
 
+  <meta property="og:title" content="ArtiZen Kicks | Sneakers & Premium Shoe Care">
+  <meta property="og:description" content="Step into confidence with sneakers, kids' shoes, and sneaker culture rooted in legacy.">
+  <meta property="og:image" content="Logo2.png">
+  <meta property="og:url" content="https://nomzanmazi.github.io/artyzen-kicks/">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ArtiZen Kicks | Sneakers & Shoe Care">
+  <meta name="twitter:description" content="Sneakers, kids' shoes, and premium shoe care rooted in sneaker culture.">
+  <meta name="twitter:image" content="Logo2.png">
+
+  <link rel="icon" href="Logo2.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    body { 
+    body {
       font-family: 'Inter', sans-serif;
-      background: url('BodyBackgroundImage.jpg') no-repeat center center fixed;
-      background-size: cover;
+      color: white;
+      text-shadow: 1px 1px 2px black;
     }
-    .gallery-img { 
-      transition: transform 0.3s, box-shadow 0.3s; 
-      border-radius: 12px; 
-      border: 2px solid #d1d5db; /* grey border */
+
+    .gallery-img {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 12px;
+      border: 2px solid #ccc;
     }
-    .gallery-img:hover { 
-      transform: scale(1.05); 
-      box-shadow: 0 10px 20px rgba(95,158,160,0.4); 
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(95,158,160,0.4);
     }
-    .logo-animated {
+
+    .logo-big {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      animation: spin-slow 10s linear infinite;
+      animation: spin 10s linear infinite;
     }
-    @keyframes spin-slow {
+
+    @keyframes spin {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    .gradient-heading {
-      font-family: 'Pacifico', cursive;
-      background: linear-gradient(90deg, #ff00cc, #3333ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pulse-text 3s infinite;
-    }
-    @keyframes pulse-text {
-      0%,100% { text-shadow: 0 0 8px #ff99cc; }
-      50% { text-shadow: 0 0 18px #3333ff; }
-    }
-    .yaga-button {
-      background: #fff;
-      color: #ff1493;
-      border: 2px solid #ff1493;
+
+    .yaga-pink {
+      background-color: white;
+      color: hotpink;
       font-weight: bold;
-      padding: 12px 28px;
-      border-radius: 12px;
+      border: 2px solid hotpink;
       transition: all 0.3s ease-in-out;
-      animation: bounce 2s infinite;
-      display: inline-block;
-    }
-    .yaga-button:hover {
-      background: #ff1493;
-      color: white;
-      transform: scale(1.05);
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
+      animation: pulse 2s infinite;
     }
 
-    /* WhatsApp Button CSS */
+    .yaga-pink:hover {
+      background-color: hotpink;
+      color: white;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      70% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* WhatsApp Floating Button */
     .whatsapp-button {
       position: fixed;
       bottom: 20px;
@@ -84,140 +90,126 @@
       z-index: 1000;
       animation: pulse 2s infinite;
     }
-
-    .whatsapp-button i {
-      font-size: 30px;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-      }
-      70% {
-        transform: scale(1.1);
-        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-      }
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-      }
-    }
+    .whatsapp-button i { font-size: 30px; }
   </style>
 </head>
 
-<body class="text-gray-900">
+<body style="background: url('BodyBackgroundImage.jpg') no-repeat center center fixed; background-size: cover;">
 
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class="bg-black bg-opacity-60 shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="flex items-center space-x-3">
-        <img src="Logo2.png" alt="ArtiZen Kicks Logo" class="h-32 w-32 logo-animated">
+        <img src="Logo2.png" alt="ArtiZen Kicks Logo" class="logo-big">
         <span class="sr-only">ArtiZen Kicks</span>
       </a>
       <div class="hidden md:flex space-x-6">
-        <a href="#kids" class="hover:text-teal-700 transition">Kid’s Shoes</a>
-        <a href="#sneakers" class="hover:text-teal-700 transition">Sneakers</a>
-        <a href="#services" class="hover:text-teal-700 transition">Services</a>
-        <a href="#contact" class="hover:text-teal-700 transition">Contact</a>
+        <a href="#kids" class="hover:text-teal-200 transition">Kids' Shoes</a>
+        <a href="#sneakers" class="hover:text-teal-200 transition">Sneakers</a>
+        <a href="#services" class="hover:text-teal-200 transition">Services</a>
+        <a href="#contact" class="hover:text-teal-200 transition">Contact</a>
       </div>
+      <button id="mobile-menu-button" class="md:hidden text-white">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
     </nav>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="#kids" class="block py-2 hover:text-teal-200">Kids' Shoes</a>
+      <a href="#sneakers" class="block py-2 hover:text-teal-200">Sneakers</a>
+      <a href="#services" class="block py-2 hover:text-teal-200">Services</a>
+      <a href="#contact" class="block py-2 hover:text-teal-200">Contact</a>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative h-[70vh] flex items-center justify-center text-center text-white" style="background: url('HeroImage.jpg') no-repeat center center / cover;">
-    <div class="absolute inset-0 bg-[#5F9EA0] bg-opacity-70"></div>
+  <section class="relative h-[70vh] flex items-center justify-center text-center">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="relative z-10 px-6">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4 gradient-heading">Exquisite Style, Tailored For You.</h1>
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-wide">Exquisite Style, Tailored For You.</h1>
       <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-        From kid’s shoes to custom sneakers & premium care, we craft confidence and elegance into every step.
+        Sneakers, kids' shoes, and care services crafted with legacy, culture, and passion.
       </p>
-      <a href="https://www.yaga.co.za/artyzen-kicks" target="_blank" class="yaga-button">Shop on Yaga</a>
+      <a href="https://www.yaga.co.za/artyzen-kicks" target="_blank"
+         class="yaga-pink py-3 px-8 rounded-lg">Shop on Yaga</a>
     </div>
   </section>
 
   <main class="container mx-auto px-6 py-12">
 
-    <!-- Kid’s Shoes Section -->
     <section id="kids" class="mb-16">
-      <h2 class="text-3xl font-bold text-center mb-8">Kid’s Shoes</h2>
+      <h2 class="text-3xl font-bold text-center mb-8">Kids' Shoes</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- moved sneaker image here -->
-        <div class="img-card">
-          <img src="H6d3d4c03fca24718b7014bd5ac262487i.jpg" alt="Kid's shoes" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="Ha37ac32f2e1f498abceda5ca0daa3e87p.jpg" alt="Modern kid's shoes" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="Hd3c0145f522e475698655f2935a2ff83l.jpg" alt="Trendy kid's sneakers" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="young-family-opens-christmas-presents.jpg" alt="Family & shoes" class="w-full h-80 object-cover gallery-img">
-        </div>
+        <div><img src="H6d3d4c03fca24718b7014bd5ac262487i.jpg" alt="Kid's sneakers" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="Ha37ac32f2e1f498abceda5ca0daa3e87p.jpg" alt="Kid's shoes style" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="Hd3c0145f522e475698655f2935a2ff83l.jpg" alt="Trendy kids wear" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="young-family-opens-christmas-presents.jpg" alt="Kids sneakers gift" class="gallery-img w-full h-80 object-cover"></div>
       </div>
     </section>
 
-    <!-- Sneakers Section -->
     <section id="sneakers" class="mb-16">
       <h2 class="text-3xl font-bold text-center mb-8">Sneakers</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="img-card">
-          <img src="close-up-of-person-tying-their-shoe.jpg" alt="Close-up sneakers" class="w-full h-80 object-cover gallery-img">
+        <div><img src="H94c63b727bac4e62860f9d53a254938b7.jpg" alt="Sneaker collection" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="close-up-of-person-tying-their-shoe.jpg" alt="Tying sneakers" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="hightop-lighted-sneakers.jpg" alt="Light-up sneakers" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="led-sneakers.jpg" alt="LED sneakers" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="light-up-sneakers-for-women.jpg" alt="Women sneakers" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="sitting-on-ladder-wearing-sneakers.jpg" alt="Ladder sneakers" class="gallery-img w-full h-80 object-cover"></div>
+        <div><img src="skateboarding.jpg" alt="Skateboarding sneakers" class="gallery-img w-full h-80 object-cover"></div>
+      </div>
+    </section>
+
+    <section id="services" class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Premium Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-black bg-opacity-70 rounded-lg shadow-md">
+          <i class="fas fa-shoe-prints text-4xl text-teal-300 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Sneaker Customization</h3>
+          <p>Personalized sneaker designs to make every step a statement.</p>
         </div>
-        <div class="img-card">
-          <img src="hightop-lighted-sneakers.jpg" alt="Lighted sneakers" class="w-full h-80 object-cover gallery-img">
+        <div class="p-6 bg-black bg-opacity-70 rounded-lg shadow-md">
+          <i class="fas fa-child text-4xl text-teal-300 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Kids’ Shoe Curation</h3>
+          <p>Stylish, durable footwear that kids love and parents trust.</p>
         </div>
-        <div class="img-card">
-          <img src="led-sneakers.jpg" alt="LED sneakers" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="light-up-sneakers-for-women.jpg" alt="Light up sneakers" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="person-in-pink-and-white-sits-to-tie-their-running-shoes.jpg" alt="Running shoes" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="pexels-helen-jovanovich-47482084-7535718.jpg" alt="Lifestyle sneakers" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="sitting-on-ladder-wearing-sneakers.jpg" alt="Sneakers on ladder" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="skateboarding.jpg" alt="Skateboarding sneakers" class="w-full h-80 object-cover gallery-img">
+        <div class="p-6 bg-black bg-opacity-70 rounded-lg shadow-md">
+          <i class="fas fa-pump-soap text-4xl text-teal-300 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Premium Shoe Care</h3>
+          <p>Keep your kicks spotless and fresh with professional care services.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="text-center">
       <h2 class="text-3xl font-bold mb-8">Connect With Us</h2>
-      <p class="mb-6">This isn’t just a store. It’s a movement. Join the ArtiZen tribe and walk with culture, confidence & community.</p>
-      <p class="italic mb-4">“We’re not selling shoes. We’re building legacy.” – ArtiZen Kicks</p>
-
-      <!-- Form -->
-      <form action="https://formsubmit.co/nomzanmazi@gmail.com" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md space-y-4">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="thanks.html">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded">
-        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-3 border rounded"></textarea>
-        <button type="submit" class="yaga-button">Send Message</button>
-      </form>
+      <p class="mb-6">Follow us and shop the latest drops directly on our Yaga store.</p>
+      <a href="https://www.yaga.co.za/artyzen-kicks" target="_blank" class="yaga-pink py-3 px-8 rounded-lg">Shop on Yaga</a>
     </section>
+
+    <section class="text-center mt-16">
+      <p class="text-sm italic text-gray-200">“Legacy is greater than currency.” – Gary Vee</p>
+      <p class="text-sm italic text-gray-200">“Make it epic for your fans, and they’ll make you unforgettable.” – MrBeast</p>
+    </section>
+
   </main>
 
-  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/27680320894" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <footer class="bg-white py-8 shadow-inner">
+  <footer class="bg-black bg-opacity-70 py-8 shadow-inner">
     <div class="container mx-auto px-6 text-center">
       <div class="flex justify-center mb-4">
-        <img src="Logo2.png" alt="ArtiZen Kicks Logo" class="h-16 w-auto">
+        <img src="Logo2.png" alt="ArtiZen Kicks Logo" class="h-16 w-auto rounded-full">
       </div>
-      <p class="text-gray-600">© 2025 ArtiZen Kicks. All rights reserved.</p>
+      <p class="text-gray-300">© 2025 ArtiZen Kicks. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const btn = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
